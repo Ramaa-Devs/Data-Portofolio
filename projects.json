@@ -1,0 +1,24 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "title": "COVID-19 Trend Analysis",
+            "category": ["analysis", "visualization"],
+            "tools": ["Python", "Pandas", "Matplotlib", "Tableau"],
+            "description": "Analyzed global COVID-19 trends and created interactive dashboards to visualize infection rates, vaccination progress, and mortality rates across different demographics.",
+            "image": "covid-analysis.jpg",
+            "link": "https://example.com/covid-analysis",
+            "date": "2023-03-15"
+        },
+        {
+            "id": 2,
+            "title": "Customer Segmentation ML Model",
+            "category": ["machine-learning", "analysis"],
+            "tools": ["Python", "Scikit-learn", "K-means", "PCA"],
+            "description": "Developed a customer segmentation model using unsupervised learning techniques to help marketing team target specific customer groups more effectively.",
+            "image": "customer-segmentation.jpg",
+            "link": "https://example.com/customer-segmentation",
+            "date": "2023-05-22"
+        }
+    ]
+}

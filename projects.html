@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramaa | Data Portfolio</title>
+    <meta name="description" content="Professional data portfolio showcasing data analysis, visualization, and machine learning projects">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="data-navbar">
+        <div class="logo">Ramaa<span>Portfolio</span></div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content animate-fade">
+                <h1>Turning <span class="data-highlight">Data</span> Into Compelling <span class="story-highlight">Stories</span></h1>
+                <p>Data Analyst | Visualization Expert | Storyteller</p>
+                <a href="#projects" class="cta-button">Explore My Work</a>
+            </div>
+            <div class="hero-visualization animate-fade">
+                <!-- Placeholder for data visualization -->
+                <div style="width:100%; height:100%; background:#f0f0f0; border-radius:8px; display:flex; align-items:center; justify-content:center;">
+                    <p style="color:#666;">Interactive Data Visualization Will Appear Here</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title animate-left">Data Projects</h2>
+            <div class="filter-buttons animate-right">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="analysis">Analysis</button>
+                <button class="filter-btn" data-filter="visualization">Visualization</button>
+                <button class="filter-btn" data-filter="machine-learning">ML</button>
+            </div>
+            
+            <div class="projects-grid animate-right" id="projectsContainer">
+                <!-- Projects will be loaded dynamically from JavaScript -->
+                <div class="project-card analysis">
+                    <img src="https://via.placeholder.com/600x400?text=Data+Analysis+Project" alt="Data Analysis Project">
+                    <div class="project-overlay">
+                        <h3>Sales Data Analysis</h3>
+                        <p>Python, Pandas, Matplotlib</p>
+                        <button class="view-project" data-id="1">View Details</button>
+                    </div>
+                </div>
+                
+                <div class="project-card visualization">
+                    <img src="https://via.placeholder.com/600x400?text=Data+Viz+Project" alt="Data Visualization Project">
+                    <div class="project-overlay">
+                        <h3>COVID-19 Dashboard</h3>
+                        <p>Tableau, D3.js</p>
+                        <button class="view-project" data-id="2">View Details</button>
+                    </div>
+                </div>
+                
+                <div class="project-card machine-learning">
+                    <img src="https://via.placeholder.com/600x400?text=ML+Project" alt="Machine Learning Project">
+                    <div class="project-overlay">
+                        <h3>Customer Segmentation</h3>
+                        <p>Python, Scikit-learn</p>
+                        <button class="view-project" data-id="3">View Details</button>
+                    </div>
+                </div>
+                
+                <div class="project-card machine-learning">
+                    <img src="https://via.placeholder.com/600x400?text=ML+Project" alt="Machine Learning Project">
+                    <div class="project-overlay">
+                        <h3>Customer Segmentation</h3>
+                        <p>Python, Scikit-learn</p>
+                        <button class="view-project" data-id="3">View Details</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-modal" id="projectModal">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <div id="modalProjectContent">
+                        <!-- Project details will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title animate-right">Data Skills Matrix</h2>
+            <div class="skills-container">
+                <div class="radar-chart-container animate-left">
+                    <!-- Placeholder for radar chart -->
+                    <div style="width:100%; height:400px; background:#f9f9f9; border-radius:8px; display:flex; align-items:center; justify-content:center;">
+                        <p>Skills Radar Chart Will Appear Here</p>
+                    </div>
+                </div>
+                <div class="skills-list animate-right">
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Python</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width:90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>SQL</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width:85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Tableau</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width:80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Machine Learning</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width:75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div style="display:flex; gap:50px; align-items:center;">
+                <div class="about-content">
+                    <h2 class="section-title">About Me</h2>
+                    <p style="margin-bottom:30px; font-size:1.1rem;">I transform raw data into meaningful insights through analysis, visualization, and storytelling. With 5 years of experience in the data field, I help organizations make data-driven decisions.</p>
+                    
+                    <h3 style="margin-bottom:20px;">Experience</h3>
+                    <div class="timeline">
+                        <div style="margin-bottom:25px; position:relative; padding-left:30px;">
+                            <div style="position:absolute; left:0; top:0; width:15px; height:15px; border-radius:50%; background:linear-gradient(90deg, var(--primary-color), var(--secondary-color));"></div>
+                            <h4 style="margin-bottom:5px;">Senior Data Analyst</h4>
+                            <p style="color:#666; margin-bottom:5px;">ABC Company | 2020 - Present</p>
+                            <p>Leading data analysis projects and building dashboards for executive reporting.</p>
+                        </div>
+                        <div style="margin-bottom:25px; position:relative; padding-left:30px;">
+                            <div style="position:absolute; left:0; top:0; width:15px; height:15px; border-radius:50%; background:linear-gradient(90deg, var(--primary-color), var(--secondary-color));"></div>
+                            <h4 style="margin-bottom:5px;">Data Analyst</h4>
+                            <p style="color:#666; margin-bottom:5px;">XYZ Corp | 2018 - 2020</p>
+                            <p>Performed data cleaning, analysis, and created monthly reports.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="Gambar\WhatsApp Image 2024-10-09 at 09.50.18_5da5c080.png" alt="Your Name" class="profile-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" required></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>diwanrdp6@gmail.com</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+6281278437207</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Bandar Lampung, Lampung, Indonesia</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="http://www.linkedin.com/in/diwan-ramadhani-dwi-putra-54096b316" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Ramaa-Devs" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-medium"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Ramaa. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
